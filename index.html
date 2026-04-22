@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CO&CA — La technologie au service de l'agrobusiness</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!--Section du nav-->
+  <nav id="nav">
+    <div class="logo">CO&CA</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#Contexte">Contexte</a></li>
+      <li><a href="#problem">Problème</a></li>
+      <li><a href="#solution">Solution</a></li>
+      <li><a href="#users">Témoignages</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero">
+    <div class="hero-content">
+      <h1>CONTEXTE</h1>
+      <p class="hero-sub">Au Togo, la filière café-cacao fait vivre des dizaines de milliers de familles rurales. Pourtant,
+          entre la ferme et l'exportation, le parcours d'un sac de cacao passe par 4 à 6 intermédiaires non
+          tracés. L'agriculteur ne sait pas ce que son produit a rapporté. Le règlement européen
+          EUDR (anti-déforestation), en vigueur depuis 2025, exige désormais une traçabilité géographique prouvée pour tout cacao exporté
+          vers l'UE. Sans traçabilité blockchain, le Togo risque de perdre ses marchés d'exportation.
+      </p>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-num" data-target="3000">0</div>
+          <div class="stat-label">Agriculteurs</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num" data-target="47">0</div>
+          <div class="stat-label">% de temps gagné</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num" data-target="99">0</div>
+          <div class="stat-label">% de satisfaction</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem -->
+  <section id="problem">
+    <div class="problem-inner">
+      <div>
+        <h1 class="section-label reveal">Le problème</h1>
+        <h2 class="section-title reveal">Vos outils vous ralentissent</h2>
+        <p class="section-desc reveal">Les équipes modernes jonglent avec 12 applications différentes en moyenne. Résultat : informations éparpillées, délais non respectés, burnout.</p>
+        <ul class="pain-list">
+          <li class="pain-item reveal">
+            <div class="pain-icon">⚡</div>
+            <div class="pain-text">
+              <strong>Silos d'information</strong>
+              <span>Les données critiques se perdent entre Slack, email, Notion, Jira…</span>
+            </div>
+          </li>
+          <li class="pain-item reveal">
+            <div class="pain-icon">🔁</div>
+            <div class="pain-text">
+              <strong>Tâches manuelles répétitives</strong>
+              <span>3h/jour perdues sur des mises à jour de statut et comptes-rendus.</span>
+            </div>
+          </li>
+          <li class="pain-item reveal">
+            <div class="pain-icon">🕵️</div>
+            <div class="pain-text">
+              <strong>Aucune visibilité réelle</strong>
+              <span>Impossible de savoir où en sont les projets sans organiser une réunion.</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="problem-visual reveal">
+        <div class="mock-header">
+          <div class="mock-dot" style="background:#f75990"></div>
+          <div class="mock-dot" style="background:#f5c518"></div>
+          <div class="mock-dot" style="background:#22c55e"></div>
+          <div class="mock-bar"></div>
+        </div>
+        <div class="mock-row" style="width:85%"></div>
+        <div class="mock-row" style="width:65%"></div>
+        <div class="mock-row" style="width:90%"></div>
+        <div class="mock-row" style="width:55%"></div>
+        <div style="margin-top:1rem; display:flex; gap:.6rem; flex-wrap:wrap;">
+          <span class="error-badge">⚠ 14 conflits de version</span>
+          <span class="error-badge">⏱ 3 délais dépassés</span>
+        </div>
+        <div style="margin-top:1.5rem; display:flex; flex-direction:column; gap:.5rem;">
+          <div style="height:6px; border-radius:3px; background:rgba(247,89,144,.3); width:100%">
+            <div style="height:100%; width:23%; background:#f75990; border-radius:3px;"></div>
+          </div>
+          <div style="font-size:.75rem; color:var(--muted)">Productivité équipe : 23%</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solution -->
+  <section id="solution">
+    <div class="solution-inner">
+      <div class="sol-header">
+        <div>
+          <span class="section-label reveal">La solution</span>
+          <h2 class="section-title reveal">Tout. En un seul endroit.</h2>
+          <p class="section-desc reveal">NexaFlow connecte vos outils existants, automatise vos workflows et offre une vue 360° à toute votre équipe.</p>
+        </div>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card featured">
+          <div class="card-icon ic-blue">🧠</div>
+          <h3>Hub de travail unifié</h3>
+          <p>Un espace central qui consolide messages, tâches, documents et intégrations. Fini les allers-retours entre onglets. Tout ce dont votre équipe a besoin, là, maintenant.</p>
+          <span class="feature-tag">NOUVEAU</span>
+        </div>
+        <div class="feature-card">
+          <div class="card-icon ic-purple">⚡</div>
+          <h3>Automatisation sans code</h3>
+          <p>Créez des workflows automatiques en quelques clics. Déclenchers, conditions, actions — pour n'importe quel processus métier.</p>
+        </div>
+        <div class="feature-card">
+          <div class="card-icon ic-green">📊</div>
+          <h3>Tableaux de bord temps réel</h3>
+          <p>Visualisez l'avancement de chaque projet, ressource et sprint avec des analytics précis et actionnables.</p>
+        </div>
+        <div class="feature-card">
+          <div class="card-icon ic-pink">🔗</div>
+          <h3>200+ Intégrations</h3>
+          <p>Slack, Notion, GitHub, Google Workspace, Salesforce… NexaFlow se branche sur votre stack existant en quelques minutes.</p>
+        </div>
+        <div class="feature-card">
+          <div class="card-icon ic-blue">🔒</div>
+          <h3>Sécurité Enterprise</h3>
+          <p>Chiffrement de bout en bout, SSO, contrôle granulaire des accès. Vos données restent vos données.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section id="how">
+    <div class="how-inner">
+      <span class="section-label reveal">Fonctionnement</span>
+      <h2 class="section-title reveal">Opérationnel en 10 minutes</h2>
+      <p class="section-desc reveal">Pas de migration complexe, pas de formation de 2 semaines. Juste de la productivité, immédiatement.</p>
+      <div class="timeline">
+        <div class="tl-step">
+          <div class="tl-num">01</div>
+          <div class="tl-body">
+            <h3>Créez votre espace</h3>
+            <p>Inscrivez-vous, nommez votre organisation et invitez vos collaborateurs. L'onboarding guidé prend moins de 3 minutes.</p>
+          </div>
+        </div>
+        <div class="tl-step">
+          <div class="tl-num">02</div>
+          <div class="tl-body">
+            <h3>Connectez vos outils</h3>
+            <p>Sélectionnez vos applications depuis notre bibliothèque de 200+ intégrations. NexaFlow importe automatiquement vos données existantes.</p>
+          </div>
+        </div>
+        <div class="tl-step">
+          <div class="tl-num">03</div>
+          <div class="tl-body">
+            <h3>Automatisez vos workflows</h3>
+            <p>Utilisez nos templates prêts à l'emploi ou créez vos propres automatisations avec notre éditeur visuel drag & drop.</p>
+          </div>
+        </div>
+        <div class="tl-step">
+          <div class="tl-num">04</div>
+          <div class="tl-body">
+            <h3>Mesurez et optimisez</h3>
+            <p>Suivez vos KPIs en temps réel. NexaFlow vous suggère des optimisations basées sur les habitudes de votre équipe.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Users -->
+  <section id="users">
+    <div class="users-inner">
+      <span class="section-label reveal">Témoignages</span>
+      <h2 class="section-title reveal">Ils ont transformé leur façon de travailler</h2>
+      <div class="users-grid">
+        <div class="user-card">
+          <div class="user-avatar">👩‍💼</div>
+          <div class="user-name">Sarah Kowalski</div>
+          <div class="user-role">Head of Product · Stripe</div>
+          <div class="user-quote">"NexaFlow a réduit nos réunions de statut de 80%. L'équipe a enfin la clarté dont elle avait besoin pour avancer vite."</div>
+          <div class="stars">★★★★★</div>
+        </div>
+        <div class="user-card">
+          <div class="user-avatar">👨‍💻</div>
+          <div class="user-name">Marcus Eze</div>
+          <div class="user-role">CTO · TechVentures</div>
+          <div class="user-quote">"En 2 semaines, nous avons automatisé 60% de nos process. Le ROI a été immédiat. Je recommande sans réserve."</div>
+          <div class="stars">★★★★★</div>
+        </div>
+        <div class="user-card">
+          <div class="user-avatar">👩‍🎨</div>
+          <div class="user-name">Amina Traoré</div>
+          <div class="user-role">Creative Director · Publicis</div>
+          <div class="user-quote">"Notre agence jonglait avec 8 outils différents. NexaFlow les a tous remplacés. Simple, élégant, efficace."</div>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+      <div class="testimonial-big reveal">
+        <blockquote>"NexaFlow n'est pas juste un outil de plus. C'est un vrai changement de paradigme dans la gestion de projets. Nos équipes ont gagné en autonomie, en clarté et en sérénité."</blockquote>
+        <cite>— David Hoang, VP Engineering · Figma</cite>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="cta">
+    <div class="cta-inner">
+      <div class="cta-glow"></div>
+      <h2 class="reveal">Prêt à <span class="highlight">passer à la vitesse supérieure</span> ?</h2>
+      <p class="reveal">Rejoignez 3 200+ équipes qui ont repris le contrôle de leur productivité. Aucune carte bancaire requise.</p>
+      <div class="email-form reveal">
+        <input type="email" placeholder="votre@email.com" />
+        <button>Commencer →</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="logo">NexaFlow</div>
+    <div class="footer-links">
+      <a href="#">Produit</a>
+      <a href="#">Tarifs</a>
+      <a href="#">Blog</a>
+      <a href="#">Contact</a>
+    </div>
+    <div class="footer-copy">© 2026 NexaFlow. Tous droits réservés.</div>
+  </footer>
+
+  <script>
+    // Custom cursor
+    const cursor = document.getElementById('cursor');
+    const ring = document.getElementById('cursor-ring');
+    let mx = 0, my = 0, rx = 0, ry = 0;
+    document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
+    function animateCursor() {
+      rx += (mx - rx) * .18;
+      ry += (my - ry) * .18;
+      if (cursor) { cursor.style.left = mx + 'px'; cursor.style.top = my + 'px'; }
+      if (ring) { ring.style.left = rx + 'px'; ring.style.top = ry + 'px'; }
+      requestAnimationFrame(animateCursor);
+    }
+    animateCursor();
+
+    // Nav scroll
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    // Hamburger menu
+    function toggleMenu() {
+      document.getElementById('navLinks').classList.toggle('open');
+    }
+
+    // Intersection Observer for reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((e, i) => {
+        if (e.isIntersecting) {
+          setTimeout(() => e.target.classList.add('visible'), i * 80);
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.reveal, .feature-card, .user-card, .tl-step, .pain-item').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Counter animation
+    function animateCounter(el, target, suffix = '') {
+      let current = 0;
+      const duration = 1800;
+      const step = target / (duration / 16);
+      const interval = setInterval(() => {
+        current = Math.min(current + step, target);
+        el.textContent = Math.floor(current).toLocaleString('fr') + suffix;
+        if (current >= target) clearInterval(interval);
+      }, 16);
+    }
+    const statsObserver = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          document.querySelectorAll('[data-target]').forEach(el => {
+            const t = +el.dataset.target;
+            const s = el.dataset.suffix || (el.dataset.target === '47' || el.dataset.target === '99' ? '%' : '+');
+            animateCounter(el, t, s);
+          });
+          statsObserver.disconnect();
+        }
+      });
+    }, { threshold: 0.5 });
+    const statsEl = document.querySelector('.hero-stats');
+    if (statsEl) statsObserver.observe(statsEl);
+
+    // Smooth section links
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        document.querySelector(a.getAttribute('href'))?.scrollIntoView({ behavior: 'smooth' });
+        document.getElementById('navLinks').classList.remove('open');
+      });
+    });
+
+    // Add stagger delay to cards
+    document.querySelectorAll('.feature-card').forEach((c, i) => {
+      c.style.transitionDelay = (i * 0.08) + 's';
+    });
+    document.querySelectorAll('.user-card').forEach((c, i) => {
+      c.style.transitionDelay = (i * 0.1) + 's';
+    });
+    document.querySelectorAll('.tl-step').forEach((c, i) => {
+      c.style.transitionDelay = (i * 0.12) + 's';
+    });
+  </script>
+</body>
+</html>
