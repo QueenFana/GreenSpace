@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CO&CA — La technologie au service de l'agrobusiness</title>
+  <link rel="icon" href="images/logo.jpeg" />
+  <title>GreenSpace — La technologie au service de l'agrobusiness</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
@@ -13,11 +14,14 @@
 
   <!--Section du nav-->
   <nav id="nav">
-    <div class="logo">CO&CA</div>
+    <div class="logo">
+      <img src="images/GREENSPACE'_Transparent.svg" style="width: 100px; height: auto;" alt="GreenSpace Logo" />
+    </div>
     <ul class="nav-links" id="navLinks">
       <li><a href="#Contexte">Contexte</a></li>
       <li><a href="#problem">Problème</a></li>
       <li><a href="#solution">Solution</a></li>
+      <li><a href="#how">Fonctionnement</a></li>
       <li><a href="#users">Témoignages</a></li>
     </ul>
     <div class="hamburger" id="hamburger" onclick="toggleMenu()">
@@ -27,6 +31,9 @@
 
   <!-- Hero -->
   <section id="hero">
+    <div class="hero-image">
+      <img src="images/cacao.jpg" alt="homme coupant du cacao" />
+    </div>
     <div class="hero-content">
       <h1>CONTEXTE</h1>
       <p class="hero-sub">Au Togo, la filière café-cacao fait vivre des dizaines de milliers de familles rurales. Pourtant,
@@ -37,16 +44,16 @@
       </p>
       <div class="hero-stats">
         <div class="stat-item">
-          <div class="stat-num" data-target="3000">0</div>
-          <div class="stat-label">Agriculteurs</div>
+          <div class="stat-num" data-target="3200" data-prefix="+">0</div>
+          <div class="stat-label">Producteurs enrôlés</div>
         </div>
         <div class="stat-item">
-          <div class="stat-num" data-target="47">0</div>
-          <div class="stat-label">% de temps gagné</div>
+          <div class="stat-num" data-target="6" data-suffix="">0</div>
+          <div class="stat-label">Intermédiaires tracés</div>
         </div>
         <div class="stat-item">
-          <div class="stat-num" data-target="99">0</div>
-          <div class="stat-label">% de satisfaction</div>
+          <div class="stat-num" data-target="100" data-suffix="%">0</div>
+          <div class="stat-label">Conformité EUDR</div>
         </div>
       </div>
     </div>
@@ -56,94 +63,139 @@
   <section id="problem">
     <div class="problem-inner">
       <div>
-        <h1 class="section-label reveal">Le problème</h1>
-        <h2 class="section-title reveal">Vos outils vous ralentissent</h2>
-        <p class="section-desc reveal">Les équipes modernes jonglent avec 12 applications différentes en moyenne. Résultat : informations éparpillées, délais non respectés, burnout.</p>
+        <span class="section-label reveal">Problème</span>
+        <p class="section-desc reveal">
+          Un sac de cacao passe par 6 mains. Personne ne sait où il va. Entre la ferme et l'exportation, la chaîne est opaque : aucun transfert n'est tracé, 
+          aucun prix n'est communiqué au producteur, et les acheteurs européens ne peuvent pas prouver l'origine géographique du produit.
+        </p>
         <ul class="pain-list">
-          <li class="pain-item reveal">
-            <div class="pain-icon">⚡</div>
+          <li class="pain-item">
+            <div class="pain-icon">🔍</div>
             <div class="pain-text">
-              <strong>Silos d'information</strong>
-              <span>Les données critiques se perdent entre Slack, email, Notion, Jira…</span>
+              <strong>Zéro traçabilité sur la chaîne</strong>
+              <span>4 à 6 intermédiaires non enregistrés s'interposent entre le champ et le port — sans aucune donnée numérique.</span>
             </div>
           </li>
-          <li class="pain-item reveal">
-            <div class="pain-icon">🔁</div>
+          <li class="pain-item">
+            <div class="pain-icon">💸</div>
             <div class="pain-text">
-              <strong>Tâches manuelles répétitives</strong>
-              <span>3h/jour perdues sur des mises à jour de statut et comptes-rendus.</span>
+              <strong>L'agriculteur ignore la valeur de sa récolte</strong>
+              <span>Le producteur ne sait jamais à quel prix son lot a été revendu. Les marges des intermédiaires restent invisibles.</span>
             </div>
           </li>
-          <li class="pain-item reveal">
-            <div class="pain-icon">🕵️</div>
+          <li class="pain-item">
+            <div class="pain-icon">🇪🇺</div>
             <div class="pain-text">
-              <strong>Aucune visibilité réelle</strong>
-              <span>Impossible de savoir où en sont les projets sans organiser une réunion.</span>
+              <strong>Le règlement EUDR menace l'export</strong>
+              <span>Depuis 2025, l'UE exige une traçabilité géographique prouvée. Sans conformité, le Togo perd ses marchés.</span>
             </div>
           </li>
         </ul>
       </div>
       <div class="problem-visual reveal">
         <div class="mock-header">
-          <div class="mock-dot" style="background:#f75990"></div>
+          <div class="mock-dot" style="background:#f75959"></div>
+          <div class="mock-dot" style="background:#fff"></div>
           <div class="mock-dot" style="background:#f5c518"></div>
           <div class="mock-dot" style="background:#22c55e"></div>
           <div class="mock-bar"></div>
         </div>
-        <div class="mock-row" style="width:85%"></div>
-        <div class="mock-row" style="width:65%"></div>
-        <div class="mock-row" style="width:90%"></div>
-        <div class="mock-row" style="width:55%"></div>
-        <div style="margin-top:1rem; display:flex; gap:.6rem; flex-wrap:wrap;">
-          <span class="error-badge">⚠ 14 conflits de version</span>
-          <span class="error-badge">⏱ 3 délais dépassés</span>
-        </div>
-        <div style="margin-top:1.5rem; display:flex; flex-direction:column; gap:.5rem;">
-          <div style="height:6px; border-radius:3px; background:rgba(247,89,144,.3); width:100%">
-            <div style="height:100%; width:23%; background:#f75990; border-radius:3px;"></div>
+        <div class="chain-title">Parcours actuel — non tracé</div>
+        <div class="chain-nodes">
+          <div class="chain-node">
+            <span class="node-icon">🧑‍🌾</span>
+            <span class="node-name">Producteur:</span>
+            <span class="node-status status-bad">Non identifié</span>
           </div>
-          <div style="font-size:.75rem; color:var(--muted)">Productivité équipe : 23%</div>
+          <div class="chain-arrow">↓ transfert invisible</div>
+          <div class="chain-node">
+            <span class="node-icon">🏘️</span>
+            <span class="node-name">Collecteur local:</span>
+            <span class="node-status status-bad">Non tracé</span>
+          </div>
+          <div class="chain-arrow">↓ transfert invisible</div>
+          <div class="chain-node">
+            <span class="node-icon">🤝</span>
+            <span class="node-name">Coopérative:</span>
+            <span class="node-status status-bad">Non tracée</span>
+          </div>
+          <div class="chain-arrow">↓ transfert invisible:</div>
+          <div class="chain-node">
+            <span class="node-icon">🚢</span>
+            <span class="node-name">Exportateur:</span>
+            <span class="node-status status-bad">Non conforme EUDR</span>
+          </div>
+        </div>
+        <div class="chain-warning">
+          ⚠️ Aucune donnée d'origine — refus possible à l'entrée UE
         </div>
       </div>
-    </div>
   </section>
 
-  <!-- Solution -->
+   <!-- Solution -->
   <section id="solution">
     <div class="solution-inner">
       <div class="sol-header">
-        <div>
-          <span class="section-label reveal">La solution</span>
-          <h2 class="section-title reveal">Tout. En un seul endroit.</h2>
-          <p class="section-desc reveal">NexaFlow connecte vos outils existants, automatise vos workflows et offre une vue 360° à toute votre équipe.</p>
+        <span class="section-label reveal">La solution GreenSpace</span>
+        <p class="section-desc reveal">Chaque lot enregistré, chaque transfert prouvé.Une plateforme décentralisée de traçabilité agricole bâtie sur la blockchain, conçue pour les réalités du terrain togolais — connectivité limitée, smartphones d'entrée de gamme, diversité des acteurs.</p>
+      </div>
+      <div class="solution-steps">
+        <div class="sol-step visible">
+          <div class="sol-step-num">01</div>
+          <div class="sol-step-body">
+            <h3>Enregistrement à la source</h3>
+            <p>Chaque producteur est enrôlé une fois via une application mobile légère. Lors de chaque récolte, il enregistre la quantité, la date et les coordonnées GPS de sa parcelle. Ces données sont horodatées et inscrites sur la blockchain. L'agriculteur reçoit un QR code unique — son identité numérique de producteur.</p>
+          </div>
+        </div>
+        <div class="sol-step visible">
+          <div class="sol-step-num">02</div>
+          <div class="sol-step-body">
+            <h3>Traçabilité à chaque transfert</h3>
+            <p>À chaque passage de main — du producteur au collecteur, du collecteur à la coopérative, jusqu'à l'exportateur — le QR code est scanné et le transfert est enregistré on-chain avec le lieu, le poids et le prix. La chaîne de custody devient un registre public, vérifiable par tous, falsifiable par personne.</p>
+          </div>
+        </div>
+        <div class="sol-step visible">
+          <div class="sol-step-num">03</div>
+          <div class="sol-step-body">
+            <h3>Conformité EUDR automatisée</h3>
+            <p>À l'exportation, la plateforme génère automatiquement un rapport de traçabilité géographique conforme EUDR — coordonnées GPS de la parcelle, date de récolte, identité de chaque intermédiaire, certifications de non-déforestation. Partageable directement aux douanes européennes.</p>
+          </div>
+        </div>
+        <div class="sol-step visible">
+          <div class="sol-step-num">04</div>
+          <div class="sol-step-body">
+            <h3>Restitution de valeur au producteur</h3>
+            <p>Pour la première fois, l'agriculteur voit via son application le prix auquel son lot a été vendu à l'export. Cette transparence crée une pression naturelle sur les marges des intermédiaires et ouvre la voie à des primes de durabilité versées directement aux producteurs.</p>
+          </div>
         </div>
       </div>
+
       <div class="features-grid">
         <div class="feature-card featured">
-          <div class="card-icon ic-blue">🧠</div>
-          <h3>Hub de travail unifié</h3>
-          <p>Un espace central qui consolide messages, tâches, documents et intégrations. Fini les allers-retours entre onglets. Tout ce dont votre équipe a besoin, là, maintenant.</p>
-          <span class="feature-tag">NOUVEAU</span>
+          <div class="card-icon ic-gold">📱</div>
+          <h3>Application hors-ligne d'abord</h3>
+          <p>Les données sont enregistrées localement sur le smartphone du producteur ou du collecteur, puis synchronisées automatiquement sur la blockchain dès qu'une connexion réseau est disponible. Aucune zone enclavée n'est exclue.</p>
+          <span class="feature-tag">ADAPTÉ AU TOGO</span>
         </div>
         <div class="feature-card">
-          <div class="card-icon ic-purple">⚡</div>
-          <h3>Automatisation sans code</h3>
-          <p>Créez des workflows automatiques en quelques clics. Déclenchers, conditions, actions — pour n'importe quel processus métier.</p>
+          <div class="card-icon ic-green">🌿</div>
+          <h3>Certification non-déforestation</h3>
+          <p>Chaque parcelle est géolocalisée et croisée avec les données satellitaires de couverture forestière pour valider automatiquement la conformité environnementale exigée par l'EUDR.</p>
         </div>
         <div class="feature-card">
-          <div class="card-icon ic-green">📊</div>
-          <h3>Tableaux de bord temps réel</h3>
-          <p>Visualisez l'avancement de chaque projet, ressource et sprint avec des analytics précis et actionnables.</p>
+          <div class="card-icon ic-gold">🔗</div>
+          <h3>QR code de lot unique</h3>
+          <p>Chaque lot de cacao reçoit un identifiant blockchain infalsifiable. Un simple scan suffit à révéler l'historique complet du produit — du champ au port.</p>
         </div>
         <div class="feature-card">
-          <div class="card-icon ic-pink">🔗</div>
-          <h3>200+ Intégrations</h3>
-          <p>Slack, Notion, GitHub, Google Workspace, Salesforce… NexaFlow se branche sur votre stack existant en quelques minutes.</p>
+          <div class="card-icon ic-brown">💳</div>
+          <h3>Paiements Flooz &amp; T-Money</h3>
+          <p>Les transactions financières entre acteurs de la chaîne sont intégrées aux transferts blockchain via Flooz et T-Money, rendant chaque paiement traçable et transparent.</p>
         </div>
         <div class="feature-card">
-          <div class="card-icon ic-blue">🔒</div>
-          <h3>Sécurité Enterprise</h3>
-          <p>Chiffrement de bout en bout, SSO, contrôle granulaire des accès. Vos données restent vos données.</p>
+          <div class="card-icon ic-blue">📊</div>
+          <h3>Rapport EUDR en un clic</h3>
+          <p>L'exportateur génère instantanément un rapport de traçabilité complet et certifié, prêt à soumettre aux autorités douanières européennes sans aucune manipulation manuelle.</p>
         </div>
       </div>
     </div>
@@ -153,72 +205,70 @@
   <section id="how">
     <div class="how-inner">
       <span class="section-label reveal">Fonctionnement</span>
-      <h2 class="section-title reveal">Opérationnel en 10 minutes</h2>
-      <p class="section-desc reveal">Pas de migration complexe, pas de formation de 2 semaines. Juste de la productivité, immédiatement.</p>
+      <p class="section-desc reveal">Du champ à l'UE, en 4 étapes. GreenSpace s'intègre dans les pratiques existantes des producteurs et coopératives. Aucune infrastructure complexe. Une formation de moins de 30 minutes suffit.</p>
       <div class="timeline">
         <div class="tl-step">
           <div class="tl-num">01</div>
           <div class="tl-body">
-            <h3>Créez votre espace</h3>
-            <p>Inscrivez-vous, nommez votre organisation et invitez vos collaborateurs. L'onboarding guidé prend moins de 3 minutes.</p>
+            <h3>Enrôlement du producteur</h3>
+            <p>L'agriculteur est enregistré par un agent de coopérative ou de l'ICAT. Ses parcelles sont géolocalisées, son profil est créé sur la blockchain. Il reçoit son QR code personnel.</p>
           </div>
         </div>
         <div class="tl-step">
           <div class="tl-num">02</div>
           <div class="tl-body">
-            <h3>Connectez vos outils</h3>
-            <p>Sélectionnez vos applications depuis notre bibliothèque de 200+ intégrations. NexaFlow importe automatiquement vos données existantes.</p>
+            <h3>Déclaration de récolte</h3>
+            <p>À chaque récolte, le producteur scanne son QR code, saisit le poids et la date. Les données sont horodatées et enregistrées on-chain — même sans internet, grâce au mode hors-ligne.</p>
           </div>
         </div>
         <div class="tl-step">
           <div class="tl-num">03</div>
           <div class="tl-body">
-            <h3>Automatisez vos workflows</h3>
-            <p>Utilisez nos templates prêts à l'emploi ou créez vos propres automatisations avec notre éditeur visuel drag & drop.</p>
+            <h3>Suivi des transferts de la chaîne</h3>
+            <p>Chaque acteur — collecteur, coopérative, négociant — scanne le lot à la réception. Le transfert est inscrit sur la blockchain avec lieu, poids et prix. La chaîne de custody se constitue automatiquement.</p>
           </div>
         </div>
         <div class="tl-step">
           <div class="tl-num">04</div>
           <div class="tl-body">
-            <h3>Mesurez et optimisez</h3>
-            <p>Suivez vos KPIs en temps réel. NexaFlow vous suggère des optimisations basées sur les habitudes de votre équipe.</p>
+            <h3>Export conforme &amp; revenu visible</h3>
+            <p>L'exportateur génère le rapport EUDR certifié en un clic. Le producteur reçoit une notification avec le prix de vente final. La transparence est totale, pour tous les acteurs de la filière.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Users -->
+  <!-- Testimonials -->
   <section id="users">
     <div class="users-inner">
       <span class="section-label reveal">Témoignages</span>
-      <h2 class="section-title reveal">Ils ont transformé leur façon de travailler</h2>
+      <p class="section-desc reveal">Ce que disent les différents acteurs de la filière du café et cacao du Togo</p>
       <div class="users-grid">
         <div class="user-card">
+          <div class="user-avatar">🧑</div>
+          <div class="user-name">ALOWODO</div>
+          <div class="user-role">Producteur de cacao · Région des Plateaux</div>
+          <div class="user-quote">"Avant GreenSpace, je n'avais aucune idée de ce que mon cacao rapportait vraiment. Maintenant je vois le prix sur mon téléphone. C'est la première fois en 20 ans que je me sens respecté."</div>
+          <div class="stars">★★★★★</div>
+        </div>
+        <div class="user-card">
           <div class="user-avatar">👩‍💼</div>
-          <div class="user-name">Sarah Kowalski</div>
-          <div class="user-role">Head of Product · Stripe</div>
-          <div class="user-quote">"NexaFlow a réduit nos réunions de statut de 80%. L'équipe a enfin la clarté dont elle avait besoin pour avancer vite."</div>
+          <div class="user-name">SOLANGE</div>
+          <div class="user-role">Directrice · Coopérative CACATO, Kloto</div>
+          <div class="user-quote">"La traçabilité nous a ouvert des portes auprès d'acheteurs européens qui refusaient nos lots. Depuis notre certification CO&amp;CA, nous avons signé deux nouveaux contrats d'export."</div>
           <div class="stars">★★★★★</div>
         </div>
         <div class="user-card">
-          <div class="user-avatar">👨‍💻</div>
-          <div class="user-name">Marcus Eze</div>
-          <div class="user-role">CTO · TechVentures</div>
-          <div class="user-quote">"En 2 semaines, nous avons automatisé 60% de nos process. Le ROI a été immédiat. Je recommande sans réserve."</div>
-          <div class="stars">★★★★★</div>
-        </div>
-        <div class="user-card">
-          <div class="user-avatar">👩‍🎨</div>
-          <div class="user-name">Amina Traoré</div>
-          <div class="user-role">Creative Director · Publicis</div>
-          <div class="user-quote">"Notre agence jonglait avec 8 outils différents. NexaFlow les a tous remplacés. Simple, élégant, efficace."</div>
+          <div class="user-avatar">🧑</div>
+          <div class="user-name">ALFRED</div>
+          <div class="user-role">Responsable sourcing · ChocoEurope GmbH</div>
+          <div class="user-quote">"Avec GreenSpace, nos audits EUDR durent 2 heures au lieu de 3 semaines. La documentation blockchain est irréfutable. C'est exactement ce dont nos acheteurs avaient besoin."</div>
           <div class="stars">★★★★★</div>
         </div>
       </div>
       <div class="testimonial-big reveal">
-        <blockquote>"NexaFlow n'est pas juste un outil de plus. C'est un vrai changement de paradigme dans la gestion de projets. Nos équipes ont gagné en autonomie, en clarté et en sérénité."</blockquote>
-        <cite>— David Hoang, VP Engineering · Figma</cite>
+        <blockquote>"GreenSpace n'est pas seulement un outil de conformité. C'est un outil de dignité pour les producteurs togolais. Pour la première fois, ils tiennent dans leurs mains la preuve de leur travail et sa vraie valeur."</blockquote>
       </div>
     </div>
   </section>
@@ -226,113 +276,28 @@
   <!-- CTA -->
   <section id="cta">
     <div class="cta-inner">
-      <div class="cta-glow"></div>
-      <h2 class="reveal">Prêt à <span class="highlight">passer à la vitesse supérieure</span> ?</h2>
-      <p class="reveal">Rejoignez 3 200+ équipes qui ont repris le contrôle de leur productivité. Aucune carte bancaire requise.</p>
-      <div class="email-form reveal">
-        <input type="email" placeholder="votre@email.com" />
-        <button>Commencer →</button>
-      </div>
+      <p class="reveal">Producteur, coopérative ou exportateur — intégrez GreenSpace et sécurisez vos accès aux marchés européens dès aujourd'hui.</p>
+      <a href="https://play.google.com/store/apps?hl=fr&pli=1">
+        <img src="images/Google Play Badge Logo.jpg" style="width: 100px; height: auto;" alt="Google Play Store">
+      </a>
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <div class="logo">NexaFlow</div>
-    <div class="footer-links">
-      <a href="#">Produit</a>
-      <a href="#">Tarifs</a>
-      <a href="#">Blog</a>
-      <a href="#">Contact</a>
+    <div class="logo">
+      <img src="images/GREENSPACE'_Transparent.svg" style="width: 100px; height: auto;" alt="GreenSpace Logo" />
     </div>
-    <div class="footer-copy">© 2026 NexaFlow. Tous droits réservés.</div>
+    <div class="footer-links">
+      <a href="#Contexte">Contexte</a>
+      <a href="#problem">Problème</a>
+      <a href="#solution">Solution</a>
+      <a href="#how">Fonctionnement</a>
+      <a href="#users">Témoignages</a>
+      <a href="#cta">Contact</a>
+    </div>
+    <div class="footer-copy">© 2026 GreenSpace — Traçabilité blockchain pour la filière cacao du Togo</div>
   </footer>
-
-  <script>
-    // Custom cursor
-    const cursor = document.getElementById('cursor');
-    const ring = document.getElementById('cursor-ring');
-    let mx = 0, my = 0, rx = 0, ry = 0;
-    document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
-    function animateCursor() {
-      rx += (mx - rx) * .18;
-      ry += (my - ry) * .18;
-      if (cursor) { cursor.style.left = mx + 'px'; cursor.style.top = my + 'px'; }
-      if (ring) { ring.style.left = rx + 'px'; ring.style.top = ry + 'px'; }
-      requestAnimationFrame(animateCursor);
-    }
-    animateCursor();
-
-    // Nav scroll
-    const nav = document.getElementById('nav');
-    window.addEventListener('scroll', () => {
-      nav.classList.toggle('scrolled', window.scrollY > 50);
-    });
-
-    // Hamburger menu
-    function toggleMenu() {
-      document.getElementById('navLinks').classList.toggle('open');
-    }
-
-    // Intersection Observer for reveal
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((e, i) => {
-        if (e.isIntersecting) {
-          setTimeout(() => e.target.classList.add('visible'), i * 80);
-          observer.unobserve(e.target);
-        }
-      });
-    }, { threshold: 0.12 });
-
-    document.querySelectorAll('.reveal, .feature-card, .user-card, .tl-step, .pain-item').forEach(el => {
-      observer.observe(el);
-    });
-
-    // Counter animation
-    function animateCounter(el, target, suffix = '') {
-      let current = 0;
-      const duration = 1800;
-      const step = target / (duration / 16);
-      const interval = setInterval(() => {
-        current = Math.min(current + step, target);
-        el.textContent = Math.floor(current).toLocaleString('fr') + suffix;
-        if (current >= target) clearInterval(interval);
-      }, 16);
-    }
-    const statsObserver = new IntersectionObserver(entries => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          document.querySelectorAll('[data-target]').forEach(el => {
-            const t = +el.dataset.target;
-            const s = el.dataset.suffix || (el.dataset.target === '47' || el.dataset.target === '99' ? '%' : '+');
-            animateCounter(el, t, s);
-          });
-          statsObserver.disconnect();
-        }
-      });
-    }, { threshold: 0.5 });
-    const statsEl = document.querySelector('.hero-stats');
-    if (statsEl) statsObserver.observe(statsEl);
-
-    // Smooth section links
-    document.querySelectorAll('a[href^="#"]').forEach(a => {
-      a.addEventListener('click', e => {
-        e.preventDefault();
-        document.querySelector(a.getAttribute('href'))?.scrollIntoView({ behavior: 'smooth' });
-        document.getElementById('navLinks').classList.remove('open');
-      });
-    });
-
-    // Add stagger delay to cards
-    document.querySelectorAll('.feature-card').forEach((c, i) => {
-      c.style.transitionDelay = (i * 0.08) + 's';
-    });
-    document.querySelectorAll('.user-card').forEach((c, i) => {
-      c.style.transitionDelay = (i * 0.1) + 's';
-    });
-    document.querySelectorAll('.tl-step').forEach((c, i) => {
-      c.style.transitionDelay = (i * 0.12) + 's';
-    });
-  </script>
+<script src="script.js"></script>
 </body>
 </html>
